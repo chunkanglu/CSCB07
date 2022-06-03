@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\Users\Kang\Documents\School\CSCB07\labs\.metadata\.plugins\org.eclipse.jdt.core
+1233005349.index
+3165134860.index
+3630675219.index
+1324203496.index
+515733453.index
+1900453500.index
+2175383878.index
+2204627002.index
+1797593436.index
+4013570109.index
+482509062.index
+314880312.index
+334145629.index
+1865797976.index
+4020051139.index
+3221065205.index
+87111012.index
+4072872565.index
