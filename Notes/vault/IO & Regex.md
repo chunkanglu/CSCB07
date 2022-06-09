@@ -2,7 +2,7 @@
 id: ohop9gc7yunj2jq11mv4kyt
 title: IO & Regex
 desc: ''
-updated: 1653916159223
+updated: 1654522008643
 created: 1653916159223
 ---
 
@@ -73,4 +73,10 @@ matcher.find(); // Can match substring
 // if pattern is "H.*d", then matches would fail on "0Hello World0"
 // but find would return true
 
-``
+// TO match phone numbers of format (xxx) xxx-xxxx
+// Normal regex would be: \(\d{3}\)\s?\d{3}-\d{4}
+// For Java, each \ must be replaced with \\ 
+//                        \\(\\d{3}\\)\\s?\\d{3}-\\d{4}
+
+
+```
