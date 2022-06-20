@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"lab4","c":"SpecialNumber","l":"add(SpecialNumber)","u":"add(lab4.SpecialNumber)"},{"p":"lab4","c":"SpecialNumber","l":"computeAverage(List<SpecialNumber>)","u":"computeAverage(java.util.List)"},{"p":"lab4","c":"SpecialNumber","l":"divideByInt(int)"},{"p":"lab4","c":"SpecialNumber","l":"SpecialNumber()","u":"%3Cinit%3E()"}];updateSearchResults();
