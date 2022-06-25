@@ -2,12 +2,55 @@
 id: ozns89lobae39y8k35w5uhz
 title: Intro to Java
 desc: ''
-updated: 1653919851836
+updated: 1656106885317
 created: 1652708698550
 ---
 Create java file and write into it  
 `javac [FILENAME].java` outputs a `[FILENAME].class`  
 `java [FILENAME]`
+
+## What is Java
+* OOP language by James Gosling in 1994, Sun Microsystems
+* Write once, run anywhere
+* Source code translated into Java bytecode with compiler which is interpreted by JVM
+
+## Data Types
+* Primitive 
+  * byte
+  * char
+  * short
+  * int
+  * long
+  * float
+  * double
+  * boolean
+* Objects
+  * Defined by classes (all classes extend Object class)
+  * Wrapper classes to use primatives as objects (eg. Integer)
+
+## Classes
+```java
+public class className {
+  type classFields;
+  
+  public className(type classFields) {
+    this.classFields = classFields;
+  }
+  
+  public classMethod() {
+    ...
+  }
+}
+
+className instance = new className(classFields);
+```
+
+## Main
+```java
+public static void main(String[] args) {
+  ...
+}
+```
 
 ## Static
 * Shared variable/method shared with all objects of the class

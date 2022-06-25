@@ -2,7 +2,7 @@
 id: dpjjs6ymp97t9dglrgni4xy
 title: OOP
 desc: ''
-updated: 1655759139081
+updated: 1656109741214
 created: 1654523702570
 ---
 
@@ -71,7 +71,23 @@ class Student extends Person {
 * `super`
   * To invoke the superclass or its associated methods
   ```java
+  public class thing extends superThing {
+    ...
+    public thing() {
+      super(); // Calls superThing constructor
+      ...
+    }
 
+    @Override
+    public int doThing() {
+      ...
+    }
+
+    // To explicitly call the superclass's method instead of overwritten one
+    public int doSuperThing() {
+      super.doThing();
+    }
+  }
   ```
 
 ## Object Class
@@ -122,7 +138,8 @@ class Student extends Person {
   * Implementation details are hidden from the user
   * Modules and methods can be used without knowing implementation
   * Advantages
-    * 
+    * Decoupling the modules that comprise a system allows them to be developed, tested, optimized, used, understood, and modified in isolation
+    * Information hiding increases software reuse because modules that aren’t tightly coupled often prove useful in other contexts 
   * 4 levels of access
     1. **private** - The member is accessible only from the (top-level) class where it is declared
     2. **package-private** - The member is accessible from any class in the package where it is declared (default access)
@@ -146,7 +163,7 @@ class Student extends Person {
 ## Interfaces
 * Define common behavious for classes
 * Cannot instantiate objects (like abstract classes)
-* Consists of abstract classes and methods (no concrete methods)
+* Consists of constants abstract methods (no concrete methods)
 * Interface methods are by default `abstract` and `public`
 * Interface attributes are by default `public`, `static` and `final`
 * Once a class `implements` an interface, it must override and implement all of the associated methods
@@ -164,7 +181,7 @@ public interface Thing<T> { // T is the placeholder for any non-primitive type (
   T var;
   ...
 }
-public interface Thing<T extends Superclass> { // To restrict the types that can be used (only types Superclass and its subclasses are valid)
+public interface Thing<T> extends Superclass { // To restrict the types that can be used (only types Superclass and its subclasses are valid)
   ...
 }
 ```

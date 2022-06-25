@@ -2,7 +2,7 @@
 id: ohop9gc7yunj2jq11mv4kyt
 title: IO & Regex
 desc: ''
-updated: 1654522008643
+updated: 1656174786802
 created: 1653916159223
 ---
 
@@ -19,7 +19,7 @@ created: 1653916159223
     import java.util.Scanner;
     Scanner scan = new Scanner(System.in);
     String str = scan.next(); // Reads everything until it reaches whitespace
-    String str = scan.next(); // Reads next line
+    String str = scan.nextLine(); // Reads next line
     int i = scan.nextInt() // Reads next integer, errors on strings
   ```
 
@@ -36,11 +36,11 @@ created: 1653916159223
 
   // Read from file (with text)
   import java.io.BufferedReader;
-  BufferedReader b = new Bufferedreader(new FIleReader("PATH"));
-  String str = b.readline();
+  BufferedReader b = new Bufferedreader(new FileReader("PATH"));
+  String str = b.readLine();
   while(str != null) {
     System.out.println(str);
-    str - b.readLine();
+    str = b.readLine();
   }
   // Readline returns null when reaches end
 

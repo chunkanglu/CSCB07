@@ -2,7 +2,7 @@
 id: 02lmpukr4x003s4pt7rshzu
 title: Version Control
 desc: ''
-updated: 1652707869331
+updated: 1656021134365
 created: 1652104001960
 ---
 # Version Control
@@ -31,6 +31,13 @@ created: 1652104001960
   * addresses single point of failure (SVN disadvantage 1)
   * addresses need for communication with server (DIsadvantage 2)
 
+---
+# Conflicts
+* Caused by:
+  * Communication issues
+  * Complex code bases
+  * Experimental features being built
+  * 2 features being built in the same class by different developers
 
 ---
 # Managing Concurrency
@@ -53,13 +60,13 @@ created: 1652104001960
 * SVN: `svn copy`
 
 # Storage
-* SVN: stores incremental differences (deltas)
+* SVN: stores incremental differences of files and folders (deltas)
 * Git: stores snapshots/state of whole project (without saving copies of existing files by instead using a link to the previous identical file)
 * Client side: Special hidden directory that saves all information needed for version control (.svn, .git)
 
 # Rules of Thumb
-1. Commit frequently
+1. Update and Commit frequently
 2. Don't break main branch
-3. Clear commit messages
-4. Test before merge
+3. Make clear commit messages
+4. Test code before merge
 5. Communicate with team
