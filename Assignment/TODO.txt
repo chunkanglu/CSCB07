@@ -1,0 +1,68 @@
+ply reader - implement check header (ASK if there is more efficient way than doing multiple readlines and equals), turn regex split into [\\s]+, implement check format of vertex and face lines
+
+off reader - turn regex split into [\\s]+, implement check format of vertex and face lines
+
+OBJ reader - ASK what if more than 3 verticies? is it possible?
+		ASK are any whitespace used to separate values? eg the vertices
+		ASK do we need to check for any vertex lines before faces lines (invalid file format)
+
+Are values for vertices and faces split by any whitespace or just one space?
+Can there be leading or trailing spaces? (eg."     v  2 3   111    ")
+Can I assume only 3 values per face/vertex line?
+
+faces 3 or more (# of faces vs how many actual)
+vertex only 3
+
+How to test if output files are correct (since floating point errors exist)
+How do we specify relative paths for testing, so that it also works on your end?
+Do we need to manually throw errors like FileNotFoundException as the functions automatically do it?
+	do we need try-catch to resolve/manually throw the errors or just use "throws"
+
+
+EXAM PREP:
+how to make control flow graphs to check graph coverage
+
+
+PLY, OFF reader add exceptions for invalid vertex indices in face lines - DONE
+
+
+ASK about complexity of regex needed (eg. to check if correct floating point numbers or do we let parseDouble just error out)
+
+So it is recommended for us to use try catch for WrontFIleFormatExceptions but I'm confuzed on what we should do after catching the exception
+
+
+OBJ reader tests:
+	- not f or v line DONE
+	- v line below face line DONE
+	- null vertex line (invalid face index DONE)
+	- invalid vertex line (face index points to face line DONE, no vertex lines DONE)
+
+	- fail extra non-empty lines at bottom 
+
+	pass empty lines at bottom 
+	pass whitespace separation
+
+	NOTE: invalid or null face lines won't occur
+
+PLY, OFF reader tests:
+	- null header PLYDONE DONE
+	- invalid header PLYDONE DONE
+	- null face line (less faces than listed PLYDONE) DONE
+	- invalid face line (fail regex PLYDONE, more vertex lines than expected PLYDONE) DONE
+	- more faces than listed PLYDONE
+	- null vertex line (invalid vertex index in face line [> total lines] PLYDONE)
+	- invalid vertex line (no vertex lines PLYDONE, fail regex PLYDONE, less vertex lines than listed [mistreated face line])
+	- fail extra non-empty lines at bottom PLYDONE
+	
+
+	OFF - invalid rgb values DONE
+		- invalid OFF line DONE
+		- null header line DONE
+
+	pass empty lines at bottom PLYDONE
+	pass whitespace separation
+	
+
+
+round when reading files or round when calculating transformed vertices
+
