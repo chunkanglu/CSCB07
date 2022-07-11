@@ -257,6 +257,23 @@ class Testing {
 	}
 	
 	@Test
+	void objTransformXEquals2() throws WrongFileFormatException, IOException {
+		Mesh mesh = new Mesh();
+		mesh.setReader(new OBJMeshReader());
+		mesh.readFromFile("./test_files/boxHalf.obj");
+//		mesh.rotateXAxis(Math.PI);
+//		mesh.setWriter(new OBJMeshWriter());
+//		mesh.writeToFile("./test_files/boxHalfRotPiXActual.obj");
+		
+		Mesh mesh2 = new Mesh();
+		mesh2.setReader(new OBJMeshReader());
+		mesh2.readFromFile("./test_files/boxHalf.obj");
+		mesh2.rotateXAxis(2*Math.PI);
+		
+		assertTrue(mesh.equals(mesh2));
+	}
+	
+	@Test
 	void plyTransformYEquals() throws WrongFileFormatException, IOException {
 		Mesh mesh = new Mesh();
 		mesh.setReader(new PLYMeshReader());
