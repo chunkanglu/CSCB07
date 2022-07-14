@@ -2,10 +2,15 @@
 id: dpjjs6ymp97t9dglrgni4xy
 title: OOP
 desc: ''
-updated: 1656109741214
+updated: 1657662002954
 created: 1654523702570
 ---
 
+## OO Thinking
+* Procedural - focus on designing methods
+  * data and operations on data separate
+* OO - bundle methods and data into objects
+  * improves software reuseability
 
 ## Inheritance:
 * Avoids redundancy for releted classes
@@ -138,8 +143,8 @@ class Student extends Person {
   * Implementation details are hidden from the user
   * Modules and methods can be used without knowing implementation
   * Advantages
-    * Decoupling the modules that comprise a system allows them to be developed, tested, optimized, used, understood, and modified in isolation
-    * Information hiding increases software reuse because modules that aren’t tightly coupled often prove useful in other contexts 
+    * Allows modules to be developed, tested, optimized, used, understood, and modified in isolation
+    * Increases software reuse because modules that aren’t tightly coupled often prove useful in other contexts 
   * 4 levels of access
     1. **private** - The member is accessible only from the (top-level) class where it is declared
     2. **package-private** - The member is accessible from any class in the package where it is declared (default access)
@@ -169,6 +174,7 @@ class Student extends Person {
 * Once a class `implements` an interface, it must override and implement all of the associated methods
 ```java
 public interface Thing {
+  int x = 3;
   public abstract String thingy();
 }
 ```

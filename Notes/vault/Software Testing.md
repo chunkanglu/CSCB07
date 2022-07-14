@@ -2,7 +2,7 @@
 id: jch4sbrt3cqff7unuzdwycl
 title: Software Testing
 desc: ''
-updated: 1656943459005
+updated: 1657722431546
 created: 1656290974219
 ---
 
@@ -33,9 +33,12 @@ created: 1656290974219
 * Software is everywhere and failures can have severe consequences
 
 ## Fault/Error/Failure
-
+* Fault - problem in code
+* Error - incorrect state of program due to a fault
+* Failure - incorrect result of the program (with respect to the expected behaviour)
 
 ## RIPR Model
+* 4 contitions for a test to observe program failure
 1. **Reachability:** test must reach location in the program that contains the fault
 2. **Infection:** After faulty location is executed, state of program must be incorrect
 3. **Propagation:** Infected (wrong) state propagate through rest of program, causing incorrect output/final state

@@ -2,7 +2,7 @@
 id: ohop9gc7yunj2jq11mv4kyt
 title: IO & Regex
 desc: ''
-updated: 1656174786802
+updated: 1657648548809
 created: 1653916159223
 ---
 
@@ -21,14 +21,20 @@ created: 1653916159223
     String str = scan.next(); // Reads everything until it reaches whitespace
     String str = scan.nextLine(); // Reads next line
     int i = scan.nextInt() // Reads next integer, errors on strings
+
+    scan.hasNext();
+    
   ```
 
 ## File class
+* Constructing a `File` instance does not create file on machine
+* Will not error if file does not exist, must call `exists()` to check
 ```java
   import java.io.File;
   File f = new File("PATH");
 
   f.exists();
+  f.delete();
   f.isDirectory();
   f.getName();
   f.createNewFile();
