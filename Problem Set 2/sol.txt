@@ -1,0 +1,68 @@
+1. 
+
+2. 
+
+3.
+
+4. 
+
+5. Violates LSP, EBook constructor initializes to 0, and throws exceptions for getLength()...
+solution to not make EBook a subclass of Book
+
+6. Facade, complexity behind memory and cpu hidd behind single compute() function
+
+7. Observer, once scheduleExam called, all students are notified thorough displayExamDate()
+
+8. Strategy, formatter specifies the strategy (how) the date should be presented
+
+9. Singleton for the Administration class
+
+10. Use 2 adapter, one for each sorting type
+
+11. Strategy desgin pattern where strategy is the differeent commands run
+
+12. T
+
+13. T, inherit and use previous superclass methods
+
+14. c Observer since it needs to update to all people
+
+15. Waterfall, Spiral, Spiral, Spiral
+
+16. Design, Maintenance, Design, Design
+
+17. yes, yes, yes
+
+18. c
+
+19. d
+
+20. T
+
+21. T
+
+22. 
+
+23. F
+
+24. c
+
+25. Bob and Carol explain their choices, then another iteration
+
+26. F, it is a limitation, advanced stage means already developed a lot of test cases for requirements. Changing requirements requires complete new test cases.
+
+27. F, if small project, little features less use
+
+28. Intent, binding activities
+manifest, metadata
+gradel, automate build
+espresso, UI testing
+
+29. d
+
+30. instead of harcoding, we store them like variables and string.xml
+
+31. F, least costly
+
+32. Pass, as alreadyRegistered() was not stubbed and will only return false
+

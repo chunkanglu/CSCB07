@@ -1,0 +1,3 @@
+interface BoxService {
+    String determineBoxSize();
+}

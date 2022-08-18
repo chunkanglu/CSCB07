@@ -1,6 +1,7 @@
 package School;
 
 public class Student extends Person implements Comparable<Student> {
+	private Administration administration = Administration.getInstance();
 	double cgpa;
 	boolean inCSCPOSt;
 	boolean passedCSCA48;
@@ -12,6 +13,7 @@ public class Student extends Person implements Comparable<Student> {
 		this.inCSCPOSt = inCSCPOSt;
 		this.passedCSCA48 = passedCSCA48;
 		this.passedCSC207 = passedCSC207;
+		administration.addStudent(this);
 	}
 	
 	@Override

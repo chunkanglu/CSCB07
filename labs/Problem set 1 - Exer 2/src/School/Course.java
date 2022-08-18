@@ -3,14 +3,18 @@ package School;
 import java.util.ArrayList;
 
 public class Course {
+	private Administration administration = Administration.getInstance();
 	String code;
 	Professor professor;
 	ArrayList<Student> students;
+	EligibleStrategy eligibleStrategy;
 	
-	public Course(String code, Professor professor, ArrayList<Student> students) {
+	public Course(String code, Professor professor, ArrayList<Student> students, EligibleStrategy eligibleStrategy) {
 		this.code = code;
 		this.professor = professor;
 		this.students = students;
+		this.eligibleStrategy = eligibleStrategy;
+		administration.addCourse(this);
 	}
 	
 	@Override
@@ -27,7 +31,7 @@ public class Course {
 	}
 	
 	public boolean isEligibile(Student s) {
-		return s.passedCSCA48 && (s.cgpa >= 3.5) && s.inCSCPOSt && (!s.passedCSC207);
+		return eligibleStrategy.isEligibile(s);
 	}
 	
 	public void addStudent(Student s) {

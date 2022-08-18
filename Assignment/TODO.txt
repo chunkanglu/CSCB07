@@ -37,9 +37,9 @@ OBJ reader tests:
 	- null vertex line (invalid face index DONE)
 	- invalid vertex line (face index points to face line DONE, no vertex lines DONE)
 
-	- fail extra non-empty lines at bottom 
+	-  (not f or v line) fail extra non-empty lines at bottom 
 
-	pass empty lines at bottom 
+	pass empty lines at bottom DONE
 	pass whitespace separation
 
 	NOTE: invalid or null face lines won't occur
@@ -49,9 +49,9 @@ PLY, OFF reader tests:
 	- invalid header PLYDONE DONE
 	- null face line (less faces than listed PLYDONE) DONE
 	- invalid face line (fail regex PLYDONE, more vertex lines than expected PLYDONE) DONE
-	- more faces than listed PLYDONE
-	- null vertex line (invalid vertex index in face line [> total lines] PLYDONE)
-	- invalid vertex line (no vertex lines PLYDONE, fail regex PLYDONE, less vertex lines than listed [mistreated face line])
+	- more faces than listed PLYDONE DONE
+	- null vertex line (invalid vertex index in face line [> total lines] PLYDONE) DONE
+	- invalid vertex line (no vertex lines PLYDONE DONE, fail regex PLYDONE, less vertex lines than listed [mistreated face line]) DONE
 	- fail extra non-empty lines at bottom PLYDONE
 	
 
@@ -59,7 +59,7 @@ PLY, OFF reader tests:
 		- invalid OFF line DONE
 		- null header line DONE
 
-	pass empty lines at bottom PLYDONE
+	pass empty lines at bottom PLYDONE DONE
 	pass whitespace separation
 	
 

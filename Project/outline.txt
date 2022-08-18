@@ -1,0 +1,24 @@
+1. Sign up & Log in system
+    - FirebaseUI https://firebase.google.com/docs/auth/android/firebaseui
+    - Custom own UI
+
+2. List venues, venue info, schedule event
+
+3. List upcoming events
+    - upcoming events display
+
+4. Track scheduled events
+    - Join events page
+
+5. Admin account
+    - https://firebase.google.com/docs/auth/admin
+    - https://stackoverflow.com/questions/48255622/how-to-create-different-user-groups-in-firebase
+    - https://firebase.google.com/docs/auth/admin/custom-claims
+    - https://stackoverflow.com/questions/46372780/android-firebase-different-types-of-users-login
+    - add field when signing up to select customer/admin
+    - logging in automatically checks and returns correct page
+
+6. Admin add new venue
+
+7. Admin filter upcoming events
+    - add filter query into page in part 3
